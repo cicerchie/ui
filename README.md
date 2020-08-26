@@ -1,6 +1,8 @@
 # Cicerchie UI
 
-A set of web components for building **fast** user interfaces.
+A set of web components for building **fast** user interfaces.<br><br>
+
+![Release](https://github.com/cicerchie/ui/workflows/Release/badge.svg?branch=master)
 
 ---
 
