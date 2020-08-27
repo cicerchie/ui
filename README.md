@@ -29,7 +29,7 @@ COMING SOON (with Storybook and not).
 
 ```html
 <script>
-  import { Button, InputText } from "@cicerchie/ui";
+  import { Button, InputText } from '@cicerchie/ui'
 </script>
 
 <Button>I'm the Button!</Button>
