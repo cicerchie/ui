@@ -3,6 +3,7 @@
 A set of web components for building **fast** user interfaces.<br><br>
 
 ![Release](https://github.com/cicerchie/ui/workflows/Release/badge.svg?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ---
 
@@ -50,6 +51,13 @@ COMING SOON.
 ## Changelog
 
 Is automagically updated with each release and [you can read it here](https://github.com/cicerchie/ui/blob/master/CHANGELOG.md).
+
+## StandardJS and Visual Studio Code
+
+We love [StandardJS](https://standardjs.com) and we're using it for this project.
+
+If you clone the project and open it in VS Code everything is already in place.<br>
+If you install suggested extensions you can **format** and **format-on-save** in StandardJS.
 
 ---
 

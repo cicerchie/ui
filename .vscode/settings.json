@@ -13,5 +13,11 @@
     "dist": true,
     "node_modules": true,
     "package-lock.json": true
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": [
+    "svelte"
+  ]
 }
