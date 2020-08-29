@@ -27,7 +27,8 @@
   ],
   "files": [
     "src",
-    "dist"
+    "dist",
+    "tailwind.config.js"
   ],
   "publishConfig": {
     "access": "public"
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "9.0.0",
+    "clsx": "1.1.1",
     "eslint": "7.7.0",
     "eslint-config-standard": "14.1.1",
     "eslint-plugin-import": "2.22.0",

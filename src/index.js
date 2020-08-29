@@ -1,2 +1,3 @@
-export { default as Button } from './Button.svelte';
-export { InputText } from './form';
+export { Button } from './button'
+export { Spinner } from './loading'
+export { InputText } from './form'
