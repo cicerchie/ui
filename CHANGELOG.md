@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/cicerchie/ui/compare/v0.1.1...v0.1.2) (2020-08-31)
+
+
+### Bug Fixes
+
+* add sr-only message and aria-hidden to Spinner ([1699526](https://github.com/cicerchie/ui/commit/1699526eebe43bb8ef2b7458b2864366e39728ec))
+
 ## [0.1.1](https://github.com/cicerchie/ui/compare/v0.1.0...v0.1.1) (2020-08-31)
 
 
