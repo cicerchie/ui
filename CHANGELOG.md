@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/cicerchie/ui/compare/v0.1.2...v0.1.3) (2020-09-05)
+
+
+### Bug Fixes
+
+* change button style ([fde94a8](https://github.com/cicerchie/ui/commit/fde94a82e98c140714f3abb5d4f1b686140ac8b9))
+
 ## [0.1.2](https://github.com/cicerchie/ui/compare/v0.1.1...v0.1.2) (2020-08-31)
 
 
