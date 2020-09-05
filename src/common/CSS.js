@@ -1,11 +1,11 @@
 export default {
   btn: {
     base:
-      'inline-flex justify-center items-center overflow-hidden text-center rounded w-auto transform scale-100 focus:shadow-outline focus:outline-none active:scale-95',
+      'inline-flex justify-center items-center overflow-hidden text-center rounded w-auto transform scale-100 border border-transparent focus:shadow-outline focus:outline-none active:scale-95 active:shadow-none',
     colors: {
       primary: 'text-white bg-blue-600 focus:bg-blue-800 hover:bg-blue-800',
       secondary: 'text-white bg-gray-600 focus:bg-gray-800 hover:bg-gray-800',
-      white: 'bg-white border focus:bg-gray-200 hover:bg-gray-200'
+      white: 'bg-white border-gray-300 focus:bg-gray-200 hover:bg-gray-200'
     },
     sizes: {
       sm: 'py-1 px-2 text-sm',
