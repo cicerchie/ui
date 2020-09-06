@@ -1,6 +1,6 @@
 module.exports = {
   variants: {
-    scale: ['responsive', 'hover', 'focus', 'active'],
-    boxShadow: ['responsive', 'hover', 'focus', 'active']
+    scale: ({ after }) => after(['active'], 'focus'),
+    boxShadow: ({ after }) => after(['active'], 'focus')
   }
 }
