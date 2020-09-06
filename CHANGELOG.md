@@ -1,3 +1,10 @@
+## [0.1.4](https://github.com/cicerchie/ui/compare/v0.1.3...v0.1.4) (2020-09-06)
+
+
+### Bug Fixes
+
+* use new variants as functions from Tailwind and update docs ([0c6b092](https://github.com/cicerchie/ui/commit/0c6b092756b852a43d4274057be2184e0180947b))
+
 ## [0.1.3](https://github.com/cicerchie/ui/compare/v0.1.2...v0.1.3) (2020-09-05)
 
 
