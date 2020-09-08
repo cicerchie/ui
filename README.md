@@ -23,18 +23,18 @@ COMING SOON (with Storybook and not).
 
 1. `npm install -D @cicerchie/ui`
 
-1. [TailwindCSS](https://tailwindcss.com) (^v1.8.0) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
+1. [TailwindCSS](https://tailwindcss.com) (^v1.8.5) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
 Use this code in your project's **tailwind.config.js**:
 
     ```js
-    const merge = require('lodash/merge')
+    const resolveConfig = require('tailwindcss/resolveConfig')
     const cicerchieUITailwindConfig = require('@cicerchie/ui/tailwind.config')
 
-    module.exports = merge(
-      cicerchieUITailwindConfig,
+    module.exports = resolveConfig(
       {
         // your optional Tailwind config here...
-      }
+      },
+      cicerchieUITailwindConfig
     )
     ```
 
