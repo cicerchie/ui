@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/cicerchie/ui/compare/v0.1.4...v0.1.5) (2020-09-11)
+
+
+### Bug Fixes
+
+* **deps-dev:** update ([a615b2b](https://github.com/cicerchie/ui/commit/a615b2b14f4a2076c5b22996bf98d939d33695b2))
+
 ## [0.1.4](https://github.com/cicerchie/ui/compare/v0.1.3...v0.1.4) (2020-09-06)
 
 
