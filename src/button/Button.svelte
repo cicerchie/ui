@@ -1,5 +1,5 @@
 <script>
-  import { current_component as currentComponent } from 'svelte/internal'
+  import { get_current_component as getCurrentComponent } from 'svelte/internal'
   import clsx from 'clsx'
 
   import { getEventsAction } from '../common/events'
@@ -24,7 +24,7 @@
 
   export let sm = null
 
-  const events = getEventsAction(currentComponent)
+  const events = getEventsAction(getCurrentComponent())
   const slots = $$props.$$slots
 
   const type = submit ? 'submit' : reset ? 'reset' : 'button'
@@ -61,7 +61,6 @@
 </script>
 
 <ButtonWrapper {href} {btnClass} {form} {type} {disabled} {loading} {events}>
-
   {#if loading}
     <Spinner sm class="absolute" />
   {/if}
@@ -81,5 +80,4 @@
       <slot name="right" />
     </div>
   {/if}
-
 </ButtonWrapper>
