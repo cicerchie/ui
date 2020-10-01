@@ -1,3 +1,11 @@
+## [0.1.6](https://github.com/cicerchie/ui/compare/v0.1.5...v0.1.6) (2020-10-01)
+
+
+### Bug Fixes
+
+* update dependencies ([60605dc](https://github.com/cicerchie/ui/commit/60605dcf999a1f7de22cb1af95a5b7ec39fc20be))
+* use the more stable internal method getCurrentComponent ([3198a17](https://github.com/cicerchie/ui/commit/3198a175f23634d2202e1447949cfba6d8ebf9ba))
+
 ## [0.1.5](https://github.com/cicerchie/ui/compare/v0.1.4...v0.1.5) (2020-09-11)
 
 
