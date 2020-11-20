@@ -44,18 +44,18 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "10.0.0",
     "clsx": "1.1.1",
-    "eslint": "7.12.1",
-    "eslint-config-standard": "16.0.1",
+    "eslint": "7.13.0",
+    "eslint-config-standard": "16.0.2",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.2",
+    "eslint-plugin-standard": "4.1.0",
     "eslint-plugin-svelte3": "2.7.3",
     "prettier-config-standard": "1.0.1",
-    "rollup": "2.33.1",
-    "rollup-plugin-svelte": "6.1.0",
+    "rollup": "2.33.3",
+    "rollup-plugin-svelte": "6.1.1",
     "rollup-plugin-terser": "7.0.2",
-    "svelte": "3.29.4"
+    "svelte": "3.29.7"
   },
   "dependencies": {}
 }
