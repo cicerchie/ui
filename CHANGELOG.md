@@ -1,3 +1,11 @@
+## [0.1.11](https://github.com/cicerchie/ui/compare/v0.1.10...v0.1.11) (2021-03-17)
+
+
+### Bug Fixes
+
+* remove useless pkg; recreate package-lock.json ([43b4773](https://github.com/cicerchie/ui/commit/43b47737f6ef91b04be1f76fa7202d7f45873c96))
+* update deps; move clsx to deps ([584e23f](https://github.com/cicerchie/ui/commit/584e23f870d3f319d3e5f1cf26a1720ee3512c33))
+
 ## [0.1.10](https://github.com/cicerchie/ui/compare/v0.1.9...v0.1.10) (2021-01-06)
 
 
