@@ -9,8 +9,7 @@ module.exports = {
     browser: true
   },
   extends: [
-    'eslint:recommended',
-    'standard'
+    'eslint:recommended'
   ],
   plugins: ['svelte3'],
   overrides: [

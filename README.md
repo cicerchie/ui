@@ -3,7 +3,6 @@
 A set of web components for building **fast** user interfaces.<br><br>
 
 ![Release](https://github.com/cicerchie/ui/workflows/Release/badge.svg?branch=master)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ---
 
@@ -21,33 +20,33 @@ COMING SOON (with Storybook and not).
 
 ## Getting started
 
-1. `npm install -D @cicerchie/ui`
+1.  `npm install -D @cicerchie/ui`
 
-1. [TailwindCSS](https://tailwindcss.com) (^v1.8.5) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
-Use this code in your project's **tailwind.config.js**:
+1.  [TailwindCSS](https://tailwindcss.com) (^v1.8.5) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
+    Use this code in your project's **tailwind.config.js**:
 
-    ```js
-    const resolveConfig = require('tailwindcss/resolveConfig')
-    const cicerchieUITailwindConfig = require('@cicerchie/ui/tailwind.config')
+        ```js
+        const resolveConfig = require('tailwindcss/resolveConfig')
+        const cicerchieUITailwindConfig = require('@cicerchie/ui/tailwind.config')
 
-    module.exports = resolveConfig(
-      {
-        // your optional Tailwind config here...
-      },
-      cicerchieUITailwindConfig
-    )
-    ```
+        module.exports = resolveConfig(
+          {
+            // your optional Tailwind config here...
+          },
+          cicerchieUITailwindConfig
+        )
+        ```
 
-    _We are planning to make available in the future an optional version of each component that already contains the CSS needed for it to work._
+        _We are planning to make available in the future an optional version of each component that already contains the CSS needed for it to work._
 
-1. Import the components you need, like this:
+1.  Import the components you need, like this:
 
 ```html
 <script>
-  import { Button, InputText } from '@cicerchie/ui'
+  import { Button, InputText } from "@cicerchie/ui";
 </script>
 
-<Button>I'm the Button!</Button>
+<button>I'm the Button!</button>
 <InputText placeholder="I'm the Input!" />
 ```
 
@@ -66,13 +65,6 @@ COMING SOON.
 ## Changelog
 
 Is automagically updated with each release and [you can read it here](https://github.com/cicerchie/ui/blob/master/CHANGELOG.md).
-
-## StandardJS and Visual Studio Code
-
-We love [StandardJS](https://standardjs.com) and we're using it for this project.
-
-If you clone the project and open it in VS Code everything is already in place.<br>
-If you install suggested extensions you can **format** and **format-on-save** in StandardJS.
 
 ---
 
