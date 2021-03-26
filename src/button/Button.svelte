@@ -1,37 +1,36 @@
-<script>
-  import { get_current_component as getCurrentComponent } from 'svelte/internal'
-  import clsx from 'clsx'
+<script lang="ts">
+  import { get_current_component } from "svelte/internal";
+  import clsx from "clsx";
 
-  import { getEventsAction } from '../common/events'
-  import CSS from '../common/CSS'
-  import ButtonWrapper from './ButtonWrapper.svelte'
-  import { Spinner } from '../loading'
+  import { getEventsAction } from "../common/events";
+  import CSS from "../common/CSS";
+  import ButtonWrapper from "./ButtonWrapper.svelte";
+  import { Spinner } from "../loading";
 
-  let className = null
-  export { className as class }
+  let className: string | undefined = undefined;
+  export { className as class };
 
-  export let block = null
-  export let disabled = null
-  export let form = null
-  export let href = null
-  export let loading = null
+  export let block: boolean | undefined = undefined;
+  export let disabled: boolean | undefined = undefined;
+  export let form: string | undefined = undefined;
+  export let href: string | undefined = undefined;
+  export let loading: boolean | undefined = undefined;
 
-  export let reset = null
-  export let submit = null
+  export let reset: boolean | undefined = undefined;
+  export let submit: boolean | undefined = undefined;
 
-  export let secondary = null
-  export let white = null
+  export let secondary: boolean | undefined = undefined;
+  export let white: boolean | undefined = undefined;
 
-  export let sm = null
+  export let sm: boolean | undefined = undefined;
 
-  const events = getEventsAction(getCurrentComponent())
-  const slots = $$props.$$slots
+  const events = getEventsAction(get_current_component());
 
-  const type = submit ? 'submit' : reset ? 'reset' : 'button'
+  $: type = submit ? "submit" : reset ? "reset" : "button";
 
-  $: btnSize = sm ? 'sm' : 'base'
-  $: btnColor = secondary ? 'secondary' : white ? 'white' : 'primary'
-  $: loadingClass = loading ? 'invisible' : ''
+  $: btnSize = sm ? "sm" : "base";
+  $: btnColor = secondary ? "secondary" : white ? "white" : "primary";
+  $: loadingClass = loading ? "invisible" : "";
 
   $: btnClass = clsx(
     CSS.btn.base,
@@ -41,23 +40,23 @@
     loading && CSS.btn.loading,
     block && CSS.btn.block,
     className
-  )
+  );
 
   $: slotLeftClass =
-    slots.left &&
+    $$slots.left &&
     clsx(
       CSS.btn.slot.sizes[btnSize],
       loadingClass,
       CSS.btn.slot.left.sizes[btnSize]
-    )
+    );
 
   $: slotRightClass =
-    slots.right &&
+    $$slots.right &&
     clsx(
       CSS.btn.slot.sizes[btnSize],
       loadingClass,
       CSS.btn.slot.right.sizes[btnSize]
-    )
+    );
 </script>
 
 <ButtonWrapper {href} {btnClass} {form} {type} {disabled} {loading} {events}>
@@ -65,7 +64,7 @@
     <Spinner sm class="absolute" />
   {/if}
 
-  {#if slots.left}
+  {#if $$slots.left}
     <div class={slotLeftClass}>
       <slot name="left" />
     </div>
@@ -75,7 +74,7 @@
     <slot />
   </span>
 
-  {#if slots.right}
+  {#if $$slots.right}
     <div class={slotRightClass}>
       <slot name="right" />
     </div>

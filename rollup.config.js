@@ -1,18 +1,26 @@
-import svelte from 'rollup-plugin-svelte'
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
+import svelte from "rollup-plugin-svelte";
+import resolve from "@rollup/plugin-node-resolve";
+import typescript from "@rollup/plugin-typescript";
+import sveltePreprocess from "svelte-preprocess";
 
-import pkg from './package.json'
+import pkg from "./package.json";
+
+const sourcemap = true;
 
 export default {
-  input: 'src',
+  input: "src/index.ts",
   output: [
-    { file: pkg.module, format: 'es' },
-    { file: pkg.main, format: 'umd', name: pkg.name }
+    { file: pkg.module, format: "es", sourcemap },
+    {
+      file: pkg.main,
+      format: "umd",
+      name: pkg.name,
+      sourcemap,
+    },
   ],
   plugins: [
-    svelte(),
+    svelte({ preprocess: sveltePreprocess() }),
     resolve(),
-    terser()
-  ]
-}
+    typescript(),
+  ],
+};

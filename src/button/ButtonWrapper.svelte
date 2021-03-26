@@ -1,11 +1,15 @@
-<script>
-  export let btnClass
-  export let disabled
-  export let events
-  export let form
-  export let href
-  export let loading
-  export let type
+<script lang="ts">
+  export let btnClass: string;
+  export let disabled: boolean | undefined;
+  export let form: string | undefined;
+  export let href: string | undefined;
+  export let loading: boolean | undefined;
+  export let type: string;
+  export let events: (
+    node: HTMLElement
+  ) => {
+    destroy: () => void;
+  };
 </script>
 
 {#if href && !disabled && !loading}
