@@ -1,3 +1,11 @@
+## [0.2.3](https://github.com/cicerchie/ui/compare/v0.2.2...v0.2.3) (2021-03-27)
+
+
+### Bug Fixes
+
+* cast className to boolean ([c362d2b](https://github.com/cicerchie/ui/commit/c362d2b3539dae6caf5db12d6f3458a0292b89cd))
+* update dependencies ([d36629b](https://github.com/cicerchie/ui/commit/d36629bda2bcaf270c0929e16550a0dca3ddc905))
+
 ## [0.2.2](https://github.com/cicerchie/ui/compare/v0.2.1...v0.2.2) (2021-03-27)
 
 
