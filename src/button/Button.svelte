@@ -40,7 +40,7 @@
     [CSS.btn.disabled]: disabled,
     [CSS.btn.loading]: loading,
     [CSS.btn.block]: block,
-    className,
+    [className]: !!className,
   });
 </script>
 

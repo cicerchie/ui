@@ -18,7 +18,7 @@
   class={objstr({
     [CSS.spinner.base]: true,
     [CSS.spinner.sizes[size]]: true,
-    className,
+    [className]: !!className,
   })}
   style="border-right-color: transparent"
   role="status"
