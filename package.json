@@ -58,7 +58,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.3.1",
     "eslint-plugin-svelte3": "3.1.2",
-    "obj-str": "1.0.3",
+    "obj-str": "1.1.0",
     "rollup": "2.43.0",
     "rollup-plugin-svelte": "7.1.0",
     "rollup-plugin-terser": "7.0.2",
