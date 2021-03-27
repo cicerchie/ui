@@ -16,6 +16,10 @@ interface CSSClasses {
       };
     };
   };
+  spinner: {
+    base: string;
+    sizes: Record<string, string>;
+  };
 }
 
 const CSSClasses: CSSClasses = {
@@ -51,6 +55,13 @@ const CSSClasses: CSSClasses = {
           base: "ml-3",
         },
       },
+    },
+  },
+  spinner: {
+    base: "border-current rounded-full animate-spin",
+    sizes: {
+      sm: "w-4 h-4 border-2",
+      base: "w-8 h-8 border-4",
     },
   },
 };

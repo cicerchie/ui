@@ -1,6 +1,6 @@
 <script lang="ts">
   import { get_current_component } from "svelte/internal";
-  import clsx from "clsx";
+  import objstr from "obj-str";
 
   import { getEventsAction } from "../common/events";
   import CSS from "../common/CSS";
@@ -27,36 +27,21 @@
   const events = getEventsAction(get_current_component());
 
   $: type = submit ? "submit" : reset ? "reset" : "button";
-
   $: btnSize = sm ? "sm" : "base";
   $: btnColor = secondary ? "secondary" : white ? "white" : "primary";
-  $: loadingClass = loading ? "invisible" : "";
-
-  $: btnClass = clsx(
-    CSS.btn.base,
-    CSS.btn.colors[btnColor],
-    CSS.btn.sizes[btnSize],
-    disabled && CSS.btn.disabled,
-    loading && CSS.btn.loading,
-    block && CSS.btn.block,
-    className
-  );
-
-  $: slotLeftClass =
-    $$slots.left &&
-    clsx(
-      CSS.btn.slot.sizes[btnSize],
-      loadingClass,
-      CSS.btn.slot.left.sizes[btnSize]
-    );
-
-  $: slotRightClass =
-    $$slots.right &&
-    clsx(
-      CSS.btn.slot.sizes[btnSize],
-      loadingClass,
-      CSS.btn.slot.right.sizes[btnSize]
-    );
+  $: slotBase = objstr({
+    [CSS.btn.slot.sizes[btnSize]]: true,
+    invisible: loading,
+  });
+  $: btnClass = objstr({
+    [CSS.btn.base]: true,
+    [CSS.btn.colors[btnColor]]: true,
+    [CSS.btn.sizes[btnSize]]: true,
+    [CSS.btn.disabled]: disabled,
+    [CSS.btn.loading]: loading,
+    [CSS.btn.block]: block,
+    className,
+  });
 </script>
 
 <ButtonWrapper {href} {btnClass} {form} {type} {disabled} {loading} {events}>
@@ -65,17 +50,17 @@
   {/if}
 
   {#if $$slots.left}
-    <div class={slotLeftClass}>
+    <div class="{slotBase} {CSS.btn.slot.left.sizes[btnSize]}">
       <slot name="left" />
     </div>
   {/if}
 
-  <span class={loadingClass}>
+  <span class:invisible={loading}>
     <slot />
   </span>
 
   {#if $$slots.right}
-    <div class={slotRightClass}>
+    <div class="{slotBase} {CSS.btn.slot.right.sizes[btnSize]}">
       <slot name="right" />
     </div>
   {/if}

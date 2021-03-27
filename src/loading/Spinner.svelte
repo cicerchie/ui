@@ -1,4 +1,8 @@
 <script lang="ts">
+  import objstr from "obj-str";
+
+  import CSS from "../common/CSS";
+
   let className: string | undefined = undefined;
   export { className as class };
 
@@ -6,12 +10,16 @@
   export let srOnlyMessage = "Loading...";
 
   export let sm: boolean | undefined = undefined;
+
+  $: size = sm ? "sm" : "base";
 </script>
 
 <div
-  class={`border-current rounded-full animate-spin ${
-    sm ? "w-4 h-4 border-2" : "w-8 h-8 border-4"
-  }${className ? ` ${className}` : ""}`}
+  class={objstr({
+    [CSS.spinner.base]: true,
+    [CSS.spinner.sizes[size]]: true,
+    className,
+  })}
   style="border-right-color: transparent"
   role="status"
   aria-hidden={aria.hidden}
