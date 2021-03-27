@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/cicerchie/ui/compare/v0.2.1...v0.2.2) (2021-03-27)
+
+
+### Bug Fixes
+
+* add @babel/core to devDependencies ([95e9ba6](https://github.com/cicerchie/ui/commit/95e9ba66c472a2f823332403d93a03f6b1c85560))
+
 ## [0.2.1](https://github.com/cicerchie/ui/compare/v0.2.0...v0.2.1) (2021-03-27)
 
 
