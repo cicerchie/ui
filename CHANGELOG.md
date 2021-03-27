@@ -1,3 +1,11 @@
+# [0.2.0](https://github.com/cicerchie/ui/compare/v0.1.11...v0.2.0) (2021-03-27)
+
+
+### Features
+
+* switch to Typescript and use new "$$slots" ([0739efd](https://github.com/cicerchie/ui/commit/0739efd9ca381db39c6457677a10780c121f3b81))
+* use obj-str (and it's babel plugin) instead of clsx ([20496e7](https://github.com/cicerchie/ui/commit/20496e7ca4a1281b86cbc340b1c808028632f118))
+
 ## [0.1.11](https://github.com/cicerchie/ui/compare/v0.1.10...v0.1.11) (2021-03-17)
 
 
