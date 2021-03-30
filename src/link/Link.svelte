@@ -2,7 +2,7 @@
   import { get_current_component } from "svelte/internal";
   import objstr from "obj-str";
 
-  import { getEventsAction } from "../common/events";
+  import { eventsIf } from "../common/events";
   import CSS from "../common/CSS";
   import { Spinner } from "../loading";
 
@@ -37,7 +37,7 @@
    */
   export let target: string | undefined = undefined;
 
-  const events = getEventsAction(get_current_component());
+  const cmp = get_current_component();
 
   $: finalClass = objstr({
     [CSS.link.colors.primary]: true,
@@ -52,7 +52,7 @@
   {target}
   rel={target === "_blank" ? "noopener noreferrer" : undefined}
   class={finalClass}
-  use:events
+  use:eventsIf={{ enabled: !loading && !disabled, cmp }}
 >
   {#if loading}
     <Spinner sm />

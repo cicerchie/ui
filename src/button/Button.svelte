@@ -2,7 +2,7 @@
   import { get_current_component } from "svelte/internal";
   import objstr from "obj-str";
 
-  import { getEventsAction } from "../common/events";
+  import { eventsIf } from "../common/events";
   import CSS from "../common/CSS";
   import { Spinner } from "../loading";
 
@@ -67,7 +67,7 @@
    */
   export let sm: boolean | undefined = undefined;
 
-  const events = getEventsAction(get_current_component());
+  const cmp = get_current_component();
 
   $: type = submit ? "submit" : reset ? "reset" : "button";
   $: finalSize = sm ? "sm" : "base";
@@ -87,7 +87,13 @@
   });
 </script>
 
-<button {type} {disabled} {form} class={finalClass} use:events>
+<button
+  {type}
+  {disabled}
+  {form}
+  class={finalClass}
+  use:eventsIf={{ enabled: !loading, cmp }}
+>
   {#if loading}
     <Spinner sm class="absolute" />
   {/if}

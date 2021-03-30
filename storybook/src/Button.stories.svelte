@@ -31,11 +31,11 @@
 
 <Story name="Block" args={{ block: true }} />
 
+<Story name="Loading state" args={{ loading: true }} />
+
 <Story name="Disabled" args={{ disabled: true }} />
 
 <Story name="Form ID" args={{ form: "contact_form" }} />
-
-<Story name="Loading state" args={{ loading: true }} />
 
 <Story name="As reset" args={{ reset: true }} />
 

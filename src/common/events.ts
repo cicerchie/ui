@@ -3,6 +3,18 @@
 import type { SvelteComponent } from "svelte";
 import { bubble, listen } from "svelte/internal";
 
+type SvelteUseAction = (
+  node: HTMLElement,
+  parameters: { enabled: boolean; cmp: SvelteComponent }
+) => {
+  update?: (parameters: unknown) => void;
+  destroy?: () => void;
+};
+
+export const eventsIf: SvelteUseAction = (node, { enabled, cmp }) => {
+  if (enabled) return getEventsAction(cmp)(node);
+};
+
 export function getEventsAction(component: SvelteComponent) {
   return (node: HTMLElement): { destroy: () => void } => {
     const events = Object.keys(component.$$.callbacks);
