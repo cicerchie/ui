@@ -33,3 +33,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Install dependencies for Storybook
+        working-directory: ./storybook
+        run: npm ci
+
+      - name: Build Storybook
+        working-directory: ./storybook
+        run: npm run build
+
+      - name: Deploy Storybook
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          branch: gh-pages
+          folder: ./storybook/storybook-static
