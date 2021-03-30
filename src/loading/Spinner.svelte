@@ -3,12 +3,20 @@
 
   import CSS from "../common/CSS";
 
+  /**
+   * Custom CSS class
+   * @type {string}
+   */
   let className: string | undefined = undefined;
   export { className as class };
 
   export let aria: Record<string, string> = { hidden: "true" };
   export let srOnlyMessage = "Loading...";
 
+  /**
+   * Small size
+   * @type {boolean}
+   */
   export let sm: boolean | undefined = undefined;
 
   $: size = sm ? "sm" : "base";

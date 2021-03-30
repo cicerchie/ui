@@ -7,21 +7,71 @@
   import ButtonWrapper from "./ButtonWrapper.svelte";
   import { Spinner } from "../loading";
 
+  /**
+   * Custom CSS class
+   * @type {string}
+   */
   let className: string | undefined = undefined;
   export { className as class };
 
+  /**
+   * Use full-width
+   * @type {boolean}
+   */
   export let block: boolean | undefined = undefined;
+
+  /**
+   * Disabled state
+   * @type {boolean}
+   */
   export let disabled: boolean | undefined = undefined;
+
+  /**
+   * ID of the form it belongs to
+   * @type {string}
+   */
   export let form: string | undefined = undefined;
+
+  /**
+   * URL it points to
+   * @type {string}
+   */
   export let href: string | undefined = undefined;
+
+  /**
+   * Loading state
+   * @type {boolean}
+   */
   export let loading: boolean | undefined = undefined;
 
+  /**
+   * Reset type
+   * @type {boolean}
+   */
   export let reset: boolean | undefined = undefined;
+
+  /**
+   * Submit type
+   * @type {boolean}
+   */
   export let submit: boolean | undefined = undefined;
 
+  /**
+   * Secondary color
+   * @type {boolean}
+   */
   export let secondary: boolean | undefined = undefined;
+
+  /**
+   * White color
+   * @type {boolean}
+   */
   export let white: boolean | undefined = undefined;
 
+  /**
+   * Small size
+   * @type {boolean}
+   */
   export let sm: boolean | undefined = undefined;
 
   const events = getEventsAction(get_current_component());
