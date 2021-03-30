@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/cicerchie/ui/compare/v0.3.0...v0.3.1) (2021-03-30)
+
+
+### Bug Fixes
+
+* **Button & Link:** do not forward events if in loading state ([f465b11](https://github.com/cicerchie/ui/commit/f465b1150d68e356cd514d60b2fa93dbcd92fc93))
+
 # [0.3.0](https://github.com/cicerchie/ui/compare/v0.2.4...v0.3.0) (2021-03-30)
 
 
