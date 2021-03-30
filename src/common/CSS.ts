@@ -16,6 +16,12 @@ interface CSSClasses {
       };
     };
   };
+  link: {
+    base: string;
+    colors: Record<string, string>;
+    disabled: string;
+    loading: string;
+  };
   spinner: {
     base: string;
     sizes: Record<string, string>;
@@ -56,6 +62,14 @@ const CSSClasses: CSSClasses = {
         },
       },
     },
+  },
+  link: {
+    base: "hover:underline",
+    colors: {
+      primary: "text-blue-700 focus:text-black focus:bg-blue-200",
+    },
+    disabled: "opacity-75 cursor-not-allowed",
+    loading: "cursor-wait",
   },
   spinner: {
     base: "border-current rounded-full animate-spin",

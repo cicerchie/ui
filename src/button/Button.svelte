@@ -4,7 +4,6 @@
 
   import { getEventsAction } from "../common/events";
   import CSS from "../common/CSS";
-  import ButtonWrapper from "./ButtonWrapper.svelte";
   import { Spinner } from "../loading";
 
   /**
@@ -31,12 +30,6 @@
    * @type {string}
    */
   export let form: string | undefined = undefined;
-
-  /**
-   * URL it points to
-   * @type {string}
-   */
-  export let href: string | undefined = undefined;
 
   /**
    * Loading state
@@ -77,16 +70,16 @@
   const events = getEventsAction(get_current_component());
 
   $: type = submit ? "submit" : reset ? "reset" : "button";
-  $: btnSize = sm ? "sm" : "base";
-  $: btnColor = secondary ? "secondary" : white ? "white" : "primary";
+  $: finalSize = sm ? "sm" : "base";
+  $: finalColor = secondary ? "secondary" : white ? "white" : "primary";
   $: slotBase = objstr({
-    [CSS.btn.slot.sizes[btnSize]]: true,
+    [CSS.btn.slot.sizes[finalSize]]: true,
     invisible: loading,
   });
-  $: btnClass = objstr({
+  $: finalClass = objstr({
     [CSS.btn.base]: true,
-    [CSS.btn.colors[btnColor]]: true,
-    [CSS.btn.sizes[btnSize]]: true,
+    [CSS.btn.colors[finalColor]]: true,
+    [CSS.btn.sizes[finalSize]]: true,
     [CSS.btn.disabled]: disabled,
     [CSS.btn.loading]: loading,
     [CSS.btn.block]: block,
@@ -94,13 +87,13 @@
   });
 </script>
 
-<ButtonWrapper {href} {btnClass} {form} {type} {disabled} {loading} {events}>
+<button {type} {disabled} {form} class={finalClass} use:events>
   {#if loading}
     <Spinner sm class="absolute" />
   {/if}
 
   {#if $$slots.left}
-    <div class="{slotBase} {CSS.btn.slot.left.sizes[btnSize]}">
+    <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
       <slot name="left" />
     </div>
   {/if}
@@ -110,8 +103,8 @@
   </span>
 
   {#if $$slots.right}
-    <div class="{slotBase} {CSS.btn.slot.right.sizes[btnSize]}">
+    <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
       <slot name="right" />
     </div>
   {/if}
-</ButtonWrapper>
+</button>

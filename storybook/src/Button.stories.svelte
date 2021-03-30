@@ -35,8 +35,6 @@
 
 <Story name="Form ID" args={{ form: "contact_form" }} />
 
-<Story name="As link" args={{ href: "http://github.com/cicerchie/ui" }} />
-
 <Story name="Loading state" args={{ loading: true }} />
 
 <Story name="As reset" args={{ reset: true }} />
