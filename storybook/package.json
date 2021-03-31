@@ -7,12 +7,12 @@
         "generate:tailwind": "npx tailwindcss-cli build -c ../tailwind.config.js -o ./src/style/tailwind.css"
     },
     "devDependencies": {
-        "@storybook/addon-actions": "6.2.0-rc.10",
-        "@storybook/addon-essentials": "6.2.0-rc.10",
-        "@storybook/addon-links": "6.2.0-rc.10",
+        "@storybook/addon-actions": "6.2.1",
+        "@storybook/addon-essentials": "6.2.1",
+        "@storybook/addon-links": "6.2.1",
         "@storybook/addon-svelte-csf": "1.0.0",
-        "@storybook/svelte": "6.2.0-rc.10",
-        "postcss": "8.2.8",
+        "@storybook/svelte": "6.2.1",
+        "postcss": "8.2.9",
         "svelte-loader": "3.0.0",
         "svelte-preprocess": "4.7.0",
         "tailwindcss-cli": "0.1.2"
