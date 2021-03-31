@@ -15,7 +15,7 @@ export const eventsIf: SvelteUseAction = (node, { enabled, cmp }) => {
   if (enabled) return getEventsAction(cmp)(node);
 };
 
-export function getEventsAction(component: SvelteComponent) {
+const getEventsAction = (component: SvelteComponent) => {
   return (node: HTMLElement): { destroy: () => void } => {
     const events = Object.keys(component.$$.callbacks);
     const listeners: (() => void)[] = [];
@@ -28,4 +28,4 @@ export function getEventsAction(component: SvelteComponent) {
       destroy: () => listeners.forEach((listener) => listener()),
     };
   };
-}
+};
