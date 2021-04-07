@@ -42,7 +42,8 @@
     "postbuild": "svelte2dts ./src --runOnTs",
     "dev": "rollup -c -w",
     "prepublishOnly": "npm run build",
-    "validate": "eslint --ext .js,.ts,.svelte . && svelte-check"
+    "validate": "eslint --ext .js,.ts,.svelte . && svelte-check",
+    "storybook": "cd storybook & npm run dev"
   },
   "devDependencies": {
     "@babel/core": "7.13.14",
