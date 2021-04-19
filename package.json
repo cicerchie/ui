@@ -51,7 +51,7 @@
     "@rollup/plugin-typescript": "8.2.1",
     "@tsconfig/svelte": "1.0.10",
     "@typescript-eslint/eslint-plugin": "4.20.0",
-    "@typescript-eslint/parser": "4.20.0",
+    "@typescript-eslint/parser": "4.22.0",
     "babel-plugin-optimize-objstr": "1.0.0",
     "eslint": "7.23.0",
     "eslint-plugin-import": "2.22.1",
