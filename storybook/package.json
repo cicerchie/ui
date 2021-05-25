@@ -15,6 +15,7 @@
         "postcss": "8.2.9",
         "svelte-loader": "3.0.0",
         "svelte-preprocess": "4.7.0",
+        "tailwindcss": "2.1.2",
         "tailwindcss-cli": "0.1.2"
     }
 }
