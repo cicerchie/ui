@@ -67,6 +67,18 @@
    */
   export let sm: boolean | undefined = undefined;
 
+  /**
+   * URL it points to ("a" tag)
+   * @type {string}
+   */
+  export let href: string | undefined = undefined;
+
+  /**
+   * Href target
+   * @type {string}
+   */
+  export let target: string | undefined = undefined;
+
   const cmp = get_current_component();
 
   $: type = submit ? "submit" : reset ? "reset" : "button";
@@ -87,30 +99,60 @@
   });
 </script>
 
-<button
-  {type}
-  {disabled}
-  {form}
-  class={finalClass}
-  use:eventsIf={{ enabled: !loading, cmp }}
->
-  {#if loading}
-    <Spinner sm class="absolute" />
-  {/if}
+{#if href}
+  <a
+    href={!loading && !disabled && href ? href : undefined}
+    {target}
+    rel={target === "_blank" ? "noopener noreferrer" : undefined}
+    class={finalClass}
+    use:eventsIf={{ enabled: !loading && !disabled, cmp }}
+  >
+    {#if loading}
+      <Spinner sm class="absolute" />
+    {/if}
 
-  {#if $$slots.left}
-    <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
-      <slot name="left" />
-    </div>
-  {/if}
+    {#if $$slots.left}
+      <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
+        <slot name="left" />
+      </div>
+    {/if}
 
-  <span class:invisible={loading}>
-    <slot />
-  </span>
+    <span class:invisible={loading}>
+      <slot />
+    </span>
 
-  {#if $$slots.right}
-    <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
-      <slot name="right" />
-    </div>
-  {/if}
-</button>
+    {#if $$slots.right}
+      <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
+        <slot name="right" />
+      </div>
+    {/if}
+  </a>
+{:else}
+  <button
+    {type}
+    {disabled}
+    {form}
+    class={finalClass}
+    use:eventsIf={{ enabled: !loading, cmp }}
+  >
+    {#if loading}
+      <Spinner sm class="absolute" />
+    {/if}
+
+    {#if $$slots.left}
+      <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
+        <slot name="left" />
+      </div>
+    {/if}
+
+    <span class:invisible={loading}>
+      <slot />
+    </span>
+
+    {#if $$slots.right}
+      <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
+        <slot name="right" />
+      </div>
+    {/if}
+  </button>
+{/if}

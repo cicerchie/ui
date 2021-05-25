@@ -13,6 +13,7 @@
       onClick: { action: "onClick" },
     },
   };
+
 </script>
 
 <Meta {...meta} />
@@ -42,3 +43,10 @@
 <Story name="As submit" args={{ submit: true }} />
 
 <Story name="With custom CSS class" args={{ class: "bg-pink-500" }} />
+
+<Story name="As link" args={{ href: "https://github.com/cicerchie/ui" }} />
+
+<Story
+  name="As link w/ custom target"
+  args={{ href: "https://github.com/cicerchie/ui", target: "_blank" }}
+/>
