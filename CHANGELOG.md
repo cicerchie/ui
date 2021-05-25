@@ -1,3 +1,15 @@
+# [0.4.0](https://github.com/cicerchie/ui/compare/v0.3.2...v0.4.0) (2021-05-25)
+
+
+### Bug Fixes
+
+* upgrade tailwindcss; use JIT build ([d674368](https://github.com/cicerchie/ui/commit/d6743680486893b3524b4faf157265399786c792))
+
+
+### Features
+
+* add href to Button ([ce3382b](https://github.com/cicerchie/ui/commit/ce3382b6ddc9cb48a1496023f4e365f7a3ec2f03))
+
 ## [0.3.2](https://github.com/cicerchie/ui/compare/v0.3.1...v0.3.2) (2021-05-25)
 
 
