@@ -130,7 +130,7 @@
 {:else}
   <button
     {type}
-    {disabled}
+    disabled={disabled || loading}
     {form}
     class={finalClass}
     use:eventsIf={{ enabled: !loading, cmp }}
