@@ -10,7 +10,9 @@
   let className: string | undefined = undefined;
   export { className as class };
 
-  export let aria: Record<string, string> = { hidden: "true" };
+  export let aria: Record<string, boolean | "true" | "false"> = {
+    hidden: "true",
+  };
   export let srOnlyMessage = "Loading...";
 
   /**
