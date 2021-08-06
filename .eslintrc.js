@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   overrides: [
     {
-      files: ["./*.js", "./.*.js"],
+      files: ["./*.js", "./.*.js", "scripts/**/*.js"],
       env: { node: true },
       parserOptions: { sourceType: "module", ecmaVersion: 2020 },
       extends: ["eslint:recommended"],
