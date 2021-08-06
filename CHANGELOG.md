@@ -1,3 +1,10 @@
+## [0.4.2](https://github.com/cicerchie/ui/compare/v0.4.1...v0.4.2) (2021-08-06)
+
+
+### Bug Fixes
+
+* **types:** use correct ARIA type ([e9b481e](https://github.com/cicerchie/ui/commit/e9b481e5f02d42fe216480539c74b657cdd71c6f))
+
 ## [0.4.1](https://github.com/cicerchie/ui/compare/v0.4.0...v0.4.1) (2021-08-06)
 
 
