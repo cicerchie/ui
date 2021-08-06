@@ -1,3 +1,11 @@
+## [0.4.1](https://github.com/cicerchie/ui/compare/v0.4.0...v0.4.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* disable button if isLoading ([cc259ae](https://github.com/cicerchie/ui/commit/cc259aef1d540ffd4a9ca97628dc24f2240b2472))
+* update dependencies; remove "svelte2dts"; use "svelte2tsx" ([9f25b67](https://github.com/cicerchie/ui/commit/9f25b67ec85ffc22c93fff00fb76fe108011fc36))
+
 # [0.4.0](https://github.com/cicerchie/ui/compare/v0.3.2...v0.4.0) (2021-05-25)
 
 
