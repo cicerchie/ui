@@ -1,3 +1,10 @@
+## [0.5.2](https://github.com/cicerchie/ui/compare/v0.5.1...v0.5.2) (2021-08-19)
+
+
+### Bug Fixes
+
+* remove useless component ([80f3d9d](https://github.com/cicerchie/ui/commit/80f3d9d5ea3c40611e2a7c736adb7c69e68055d0))
+
 ## [0.5.1](https://github.com/cicerchie/ui/compare/v0.5.0...v0.5.1) (2021-08-19)
 
 
