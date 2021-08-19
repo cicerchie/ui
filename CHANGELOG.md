@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/cicerchie/ui/compare/v0.5.0...v0.5.1) (2021-08-19)
+
+
+### Bug Fixes
+
+* do not use SvelteKit $lib syntax for paths ([d09df39](https://github.com/cicerchie/ui/commit/d09df3986c5677302420ff8dee4f5d3aad66318b))
+
 # [0.5.0](https://github.com/cicerchie/ui/compare/v0.4.4...v0.5.0) (2021-08-19)
 
 
