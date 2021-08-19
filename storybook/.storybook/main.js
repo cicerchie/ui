@@ -12,6 +12,11 @@ module.exports = {
     builder: "webpack5",
   },
   webpackFinal: async (config) => {
+    console.log(
+      "path:",
+      path.resolve(__dirname, "..", "node_modules", "svelte")
+    );
+    console.log("__dirname:", __dirname);
     config.resolve = {
       ...config.resolve,
       alias: {
