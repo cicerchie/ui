@@ -38,7 +38,6 @@
     "lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "storybook": "cd storybook & npm run dev",
-    "preversion": "cp -r package.json ./package",
     "postversion": "cp -r package.json .. && npm run package"
   },
   "devDependencies": {
