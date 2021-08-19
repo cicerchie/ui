@@ -1,7 +1,7 @@
 <script lang="ts">
 	import objstr from 'obj-str';
 
-	import CSS from '$lib/common/CSS';
+	import CSS from '../common/CSS';
 
 	/**
 	 * Custom CSS class
