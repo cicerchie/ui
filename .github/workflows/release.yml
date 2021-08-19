@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Move package.json from root "package" dir
+      - name: Move package.json from root to "package" dir
         run: |
           mkdir ./package
           cp ./package.json ./package/package.json
