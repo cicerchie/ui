@@ -2,9 +2,9 @@
   import { get_current_component } from "svelte/internal";
   import objstr from "obj-str";
 
-  import { eventsIf } from "../common/events";
-  import CSS from "../common/CSS";
-  import { Spinner } from "../loading";
+  import { eventsIf } from "$lib/common/events";
+  import CSS from "$lib/common/CSS";
+  import { Spinner } from "$lib/loading";
 
   /**
    * Custom CSS class

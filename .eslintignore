@@ -1,9 +1,0 @@
-.DS_Store
-node_modules
-dist
-storybook/storybook-static
-
-**/*.scss
-**/*.svg
-**/*.zip
-**/*.json

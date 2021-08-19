@@ -1,25 +1,24 @@
 <script lang="ts">
-  import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
+	import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
 
-  import { Button } from "../../src";
+	import { Button } from '../../src/lib';
 
-  const meta = {
-    title: "Button",
-    component: Button,
-    argTypes: {
-      label: {
-        defaultValue: "Click me",
-      },
-      onClick: { action: "onClick" },
-    },
-  };
-
+	const meta = {
+		title: 'Button',
+		component: Button,
+		argTypes: {
+			label: {
+				defaultValue: 'Click me'
+			},
+			onClick: { action: 'onClick' }
+		}
+	};
 </script>
 
 <Meta {...meta} />
 
 <Template let:args>
-  <Button {...args} on:click={args.onClick}>{args.label}</Button>
+	<Button {...args} on:click={args.onClick}>{args.label}</Button>
 </Template>
 
 <Story name="Primary" />
@@ -36,17 +35,17 @@
 
 <Story name="Disabled" args={{ disabled: true }} />
 
-<Story name="Form ID" args={{ form: "contact_form" }} />
+<Story name="Form ID" args={{ form: 'contact_form' }} />
 
 <Story name="As reset" args={{ reset: true }} />
 
 <Story name="As submit" args={{ submit: true }} />
 
-<Story name="With custom CSS class" args={{ class: "bg-pink-500" }} />
+<Story name="With custom CSS class" args={{ class: 'bg-pink-500' }} />
 
-<Story name="As link" args={{ href: "https://github.com/cicerchie/ui" }} />
+<Story name="As link" args={{ href: 'https://github.com/cicerchie/ui' }} />
 
 <Story
-  name="As link w/ custom target"
-  args={{ href: "https://github.com/cicerchie/ui", target: "_blank" }}
+	name="As link w/ custom target"
+	args={{ href: 'https://github.com/cicerchie/ui', target: '_blank' }}
 />

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
 
-  import { Spinner } from "../../src";
+  import { Spinner } from "../../src/lib";
 
   const meta = {
     title: "Spinner",

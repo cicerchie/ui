@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
 
-  import { Link } from "../../src";
+  import { Link } from "../../src/lib";
 
   const meta = {
     title: "Link",
