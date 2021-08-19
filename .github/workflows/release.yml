@@ -25,10 +25,7 @@ jobs:
         run: npm ci
 
       - name: Move files for new version from root to "package" dir
-        run: |
-          mkdir ./package
-          cp ./CHANGELOG.md ./package/CHANGELOG.md
-          cp ./package.json ./package/package.json
+        run: mkdir ./package && cp ./package.json ./package/package.json
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
