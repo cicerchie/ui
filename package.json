@@ -41,12 +41,10 @@
     "postversion": "cp -r package.json .. && cd .. && npm run package"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
     "@sveltejs/adapter-static": "1.0.0-next.16",
     "@sveltejs/kit": "1.0.0-next.154",
     "@typescript-eslint/eslint-plugin": "4.29.2",
     "@typescript-eslint/parser": "4.29.2",
-    "babel-plugin-optimize-objstr": "1.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-svelte3": "3.2.0",
