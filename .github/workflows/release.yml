@@ -24,9 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Move package.json from root to "package" dir
+      - name: Move files for new version from root to "package" dir
         run: |
           mkdir ./package
+          cp ./CHANGELOG.md ./package/CHANGELOG.md
           cp ./package.json ./package/package.json
 
       - name: Semantic Release
