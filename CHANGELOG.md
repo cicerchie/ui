@@ -1,3 +1,10 @@
+## [0.4.4](https://github.com/cicerchie/ui/compare/v0.4.3...v0.4.4) (2021-08-19)
+
+
+### Bug Fixes
+
+* update LICENSE year ([67e4f1b](https://github.com/cicerchie/ui/commit/67e4f1bc7e2d5007f71c5aed490b343150e05f48))
+
 ## [0.4.3](https://github.com/cicerchie/ui/compare/v0.4.2...v0.4.3) (2021-08-18)
 
 
