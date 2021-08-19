@@ -1,3 +1,10 @@
+## [0.5.5](https://github.com/cicerchie/ui/compare/v0.5.4...v0.5.5) (2021-08-19)
+
+
+### Bug Fixes
+
+* fake new version ([85a060b](https://github.com/cicerchie/ui/commit/85a060b6ef9af67315ec3e0801a255ac17379966))
+
 ## [0.5.4](https://github.com/cicerchie/ui/compare/v0.5.3...v0.5.4) (2021-08-19)
 
 
