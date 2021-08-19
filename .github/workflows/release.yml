@@ -25,7 +25,9 @@ jobs:
         run: npm ci
 
       - name: Move package.json from root "package" dir
-        run: cp -r package.json ./package
+        run: |
+          mkdir ./package
+          cp ./package.json ./package/package.json
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
