@@ -38,7 +38,7 @@
     "lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "storybook": "cd storybook & npm run dev",
-    "prepublishOnly": "npm run package"
+    "postversion": "npm run package"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
