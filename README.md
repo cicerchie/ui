@@ -2,7 +2,22 @@
 
 A set of web components for building **fast** user interfaces.<br><br>
 
-![Release](https://github.com/cicerchie/ui/workflows/Release/badge.svg?branch=master)
+![Lastest release](https://badgen.net/github/release/cicerchie/ui)
+![License](https://badgen.net/github/license/cicerchie/ui)
+![Github repo dependents](https://badgen.net/github/dependents-repo/cicerchie/ui)
+![Github pkg dependents](https://badgen.net/github/dependents-pkg/cicerchie/ui)
+![Github open issues](https://badgen.net/github/open-issues/cicerchie/ui)
+![Github status](https://badgen.net/github/checks/cicerchie/ui/master/Release)
+![Bundlephobia MinZip](https://badgen.net/bundlephobia/minzip/@cicerchie/ui)
+![Bundlephobia dependency count](https://badgen.net/bundlephobia/dependency-count/@cicerchie/ui)
+![Snyk](https://badgen.net/snyk/cicerchie/ui)
+![Npm version](https://badgen.net/npm/v/@cicerchie/ui)
+![Npm DT](https://badgen.net/npm/dt/@cicerchie/ui)
+![Npm dependents](https://badgen.net/npm/dependents/@cicerchie/ui)
+![Npm types](https://badgen.net/npm/types/@cicerchie/ui)
+![David DM dep](https://badgen.net/david/dep/cicerchie/ui)
+![David DM dev-dep](https://badgen.net/david/dev/cicerchie/ui)
+![David DM peer-dep](https://badgen.net/david/peer/cicerchie/ui)
 
 ---
 
