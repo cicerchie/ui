@@ -1,3 +1,15 @@
+# [0.6.0](https://github.com/cicerchie/ui/compare/v0.5.8...v0.6.0) (2021-11-09)
+
+
+### Bug Fixes
+
+* update dependencies ([589b752](https://github.com/cicerchie/ui/commit/589b752b9309761400ad1d3306da81c8110e8af9))
+
+
+### Features
+
+* do not use "eventsIf" function anymore ([1258e13](https://github.com/cicerchie/ui/commit/1258e13abf954134fc0c9f57af6c4ad1bc413d95))
+
 ## [0.5.8](https://github.com/cicerchie/ui/compare/v0.5.7...v0.5.8) (2021-11-03)
 
 
