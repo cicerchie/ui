@@ -2,7 +2,6 @@
   import { get_current_component } from "svelte/internal";
   import objstr from "obj-str";
 
-  import { eventsIf } from "../common/events";
   import CSS from "../common/CSS";
   import { Spinner } from "../loading";
 
@@ -52,7 +51,11 @@
   {target}
   rel={target === "_blank" ? "noopener noreferrer" : undefined}
   class={finalClass}
-  use:eventsIf={{ enabled: !loading && !disabled, cmp }}
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
+  on:focus
 >
   {#if loading}
     <Spinner sm />
