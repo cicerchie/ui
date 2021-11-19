@@ -15,9 +15,6 @@ A set of web components for building **fast** user interfaces.<br><br>
 ![Npm DT](https://badgen.net/npm/dt/@cicerchie/ui)
 ![Npm dependents](https://badgen.net/npm/dependents/@cicerchie/ui)
 ![Npm types](https://badgen.net/npm/types/@cicerchie/ui)
-![David DM dep](https://badgen.net/david/dep/cicerchie/ui)
-![David DM dev-dep](https://badgen.net/david/dev/cicerchie/ui)
-![David DM peer-dep](https://badgen.net/david/peer/cicerchie/ui)
 
 ---
 
