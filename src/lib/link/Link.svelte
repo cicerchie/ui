@@ -19,6 +19,12 @@
   export let disabled: boolean | undefined = undefined;
 
   /**
+   * ID
+   * @type {string}
+   */
+  export let id: string | undefined = undefined;
+
+  /**
    * Loading state
    * @type {boolean}
    */
@@ -48,6 +54,7 @@
 
 <a
   href={!loading && !disabled && href ? href : undefined}
+  {id}
   {target}
   rel={target === "_blank" ? "noopener noreferrer" : undefined}
   class={finalClass}

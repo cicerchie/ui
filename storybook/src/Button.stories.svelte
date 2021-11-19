@@ -37,6 +37,8 @@
 
 <Story name="Form ID" args={{ form: "contact_form" }} />
 
+<Story name="ID" args={{ id: "with_id" }} />
+
 <Story name="As reset" args={{ reset: true }} />
 
 <Story name="As submit" args={{ submit: true }} />

@@ -3,6 +3,10 @@
 
   import CSS from "../common/CSS";
 
+  export let aria: Record<string, boolean | "true" | "false"> = {
+    hidden: "true",
+  };
+
   /**
    * Custom CSS class
    * @type {string}
@@ -10,16 +14,19 @@
   let className: string | undefined = undefined;
   export { className as class };
 
-  export let aria: Record<string, boolean | "true" | "false"> = {
-    hidden: "true",
-  };
-  export let srOnlyMessage = "Loading...";
+  /**
+   * ID
+   * @type {string}
+   */
+  export let id: string | undefined = undefined;
 
   /**
    * Small size
    * @type {boolean}
    */
   export let sm: boolean | undefined = undefined;
+
+  export let srOnlyMessage = "Loading...";
 
   $: size = sm ? "sm" : "base";
 
@@ -32,6 +39,7 @@
 
 <div
   class={finalClass}
+  {id}
   style="border-right-color: transparent"
   role="status"
   aria-hidden={aria.hidden}

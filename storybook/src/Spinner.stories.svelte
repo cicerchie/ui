@@ -17,6 +17,8 @@
 
 <Story name="Primary" />
 
+<Story name="ID" args={{ id: "with_id" }} />
+
 <Story name="Small" args={{ sm: true }} />
 
 <Story name="With custom CSS class" args={{ class: "text-pink-500" }} />
