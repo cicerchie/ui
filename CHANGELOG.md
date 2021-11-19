@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/cicerchie/ui/compare/v0.7.0...v0.7.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* update dependencies ([5e2d6cd](https://github.com/cicerchie/ui/commit/5e2d6cd5829682d9f30254651a43ee98615f8bc7))
+
 # [0.7.0](https://github.com/cicerchie/ui/compare/v0.6.0...v0.7.0) (2021-11-19)
 
 
