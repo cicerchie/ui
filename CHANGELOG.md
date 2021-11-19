@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/cicerchie/ui/compare/v0.6.0...v0.7.0) (2021-11-19)
+
+
+### Features
+
+* add id prop to components ([9db30bc](https://github.com/cicerchie/ui/commit/9db30bc3541b265c8fd34a550bedaddddaa33795))
+
 # [0.6.0](https://github.com/cicerchie/ui/compare/v0.5.8...v0.6.0) (2021-11-09)
 
 
