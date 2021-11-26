@@ -1,3 +1,11 @@
+## [0.7.2](https://github.com/cicerchie/ui/compare/v0.7.1...v0.7.2) (2021-11-26)
+
+
+### Bug Fixes
+
+* reduce secondary button bg intensity ([cda2f96](https://github.com/cicerchie/ui/commit/cda2f960cacd08fe9d43c2aae177d2adee5b3b51))
+* update dependencies ([97e1386](https://github.com/cicerchie/ui/commit/97e13867a3cb2ae6818885353f7a9ec198166be9))
+
 ## [0.7.1](https://github.com/cicerchie/ui/compare/v0.7.0...v0.7.1) (2021-11-19)
 
 
