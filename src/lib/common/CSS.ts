@@ -46,7 +46,7 @@ const CSSClasses: CSSClasses = {
     slot: {
       sizes: {
         sm: "h-3 w-3",
-        base: "h-4 w-4",
+        base: "h-5 w-5",
       },
       left: {
         sizes: {
