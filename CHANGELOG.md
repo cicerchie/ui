@@ -1,3 +1,10 @@
+## [0.7.3](https://github.com/cicerchie/ui/compare/v0.7.2...v0.7.3) (2021-11-26)
+
+
+### Bug Fixes
+
+* increase btn base slot size ([84c95dd](https://github.com/cicerchie/ui/commit/84c95dd7b39dc8cf19556a23e449e7b9d2d58e36))
+
 ## [0.7.2](https://github.com/cicerchie/ui/compare/v0.7.1...v0.7.2) (2021-11-26)
 
 
