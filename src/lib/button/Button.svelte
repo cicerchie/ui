@@ -40,7 +40,7 @@
    * Loading state
    * @type {boolean}
    */
-  export let loading: boolean | undefined = undefined;
+  export let isLoading: boolean | undefined = undefined;
 
   /**
    * Reset type
@@ -91,14 +91,14 @@
   $: finalColor = secondary ? "secondary" : white ? "white" : "primary";
   $: slotBase = objstr({
     [CSS.btn.slot.sizes[finalSize]]: true,
-    invisible: loading,
+    invisible: isLoading,
   });
   $: finalClass = objstr({
     [CSS.btn.base]: true,
     [CSS.btn.colors[finalColor]]: true,
     [CSS.btn.sizes[finalSize]]: true,
     [CSS.btn.disabled]: disabled,
-    [CSS.btn.loading]: loading,
+    [CSS.btn.loading]: isLoading,
     [CSS.btn.block]: block,
     [className]: !!className,
   });
@@ -106,7 +106,7 @@
 
 {#if href}
   <a
-    href={!loading && !disabled && href ? href : undefined}
+    href={!isLoading && !disabled && href ? href : undefined}
     {id}
     {target}
     rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -117,7 +117,7 @@
     on:mouseleave
     on:focus
   >
-    {#if loading}
+    {#if isLoading}
       <Spinner sm class="absolute" />
     {/if}
 
@@ -127,7 +127,7 @@
       </div>
     {/if}
 
-    <span class:invisible={loading}>
+    <span class:invisible={isLoading}>
       <slot />
     </span>
 
@@ -141,7 +141,7 @@
   <button
     {id}
     {type}
-    disabled={disabled || loading}
+    disabled={disabled || isLoading}
     {form}
     class={finalClass}
     on:click
@@ -150,7 +150,7 @@
     on:mouseleave
     on:focus
   >
-    {#if loading}
+    {#if isLoading}
       <Spinner sm class="absolute" />
     {/if}
 
@@ -160,7 +160,7 @@
       </div>
     {/if}
 
-    <span class:invisible={loading}>
+    <span class:invisible={isLoading}>
       <slot />
     </span>
 

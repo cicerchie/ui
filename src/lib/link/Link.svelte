@@ -28,7 +28,7 @@
    * Loading state
    * @type {boolean}
    */
-  export let loading: boolean | undefined = undefined;
+  export let isLoading: boolean | undefined = undefined;
 
   /**
    * URL it points to
@@ -47,13 +47,13 @@
   $: finalClass = objstr({
     [CSS.link.colors.primary]: true,
     [CSS.link.disabled]: disabled,
-    [CSS.link.loading]: loading,
+    [CSS.link.loading]: isLoading,
     [className]: !!className,
   });
 </script>
 
 <a
-  href={!loading && !disabled && href ? href : undefined}
+  href={!isLoading && !disabled && href ? href : undefined}
   {id}
   {target}
   rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -64,22 +64,22 @@
   on:mouseleave
   on:focus
 >
-  {#if loading}
+  {#if isLoading}
     <Spinner sm />
   {/if}
 
   {#if $$slots.left}
-    <span class:invisible={loading}>
+    <span class:invisible={isLoading}>
       <slot name="left" />
     </span>
   {/if}
 
-  <span class:invisible={loading}>
+  <span class:invisible={isLoading}>
     <slot />
   </span>
 
   {#if $$slots.right}
-    <span class:invisible={loading}>
+    <span class:invisible={isLoading}>
       <slot name="right" />
     </span>
   {/if}

@@ -31,7 +31,7 @@
 
 <Story name="Block" args={{ block: true }} />
 
-<Story name="Loading state" args={{ loading: true }} />
+<Story name="Loading state" args={{ isLoading: true }} />
 
 <Story name="Disabled" args={{ disabled: true }} />
 
