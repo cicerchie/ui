@@ -13,7 +13,7 @@
    * Disabled state
    * @type {boolean}
    */
-  export let disabled: boolean | undefined = undefined;
+  export let isDisabled: boolean | undefined = undefined;
 
   /**
    * ID
@@ -41,13 +41,13 @@
 
   $: finalClass =
     CSS.link.colors.primary +
-    (disabled ? " " + CSS.link.disabled : "") +
+    (isDisabled ? " " + CSS.link.disabled : "") +
     (isLoading ? " " + CSS.link.loading : "") +
     (!!className ? " " + className : "");
 </script>
 
 <a
-  href={!isLoading && !disabled && href ? href : undefined}
+  href={!isLoading && !isDisabled && href ? href : undefined}
   {id}
   {target}
   rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -59,7 +59,7 @@
   on:focus
 >
   {#if isLoading}
-    <Spinner sm />
+    <Spinner isSmall />
   {/if}
 
   {#if $$slots.left}

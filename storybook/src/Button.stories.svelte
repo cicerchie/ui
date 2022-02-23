@@ -23,25 +23,25 @@
 
 <Story name="Primary" />
 
-<Story name="Secondary" args={{ secondary: true }} />
+<Story name="Secondary" args={{ isSecondary: true }} />
 
-<Story name="White" args={{ white: true }} />
+<Story name="White" args={{ isWhite: true }} />
 
-<Story name="Small" args={{ sm: true }} />
+<Story name="Small" args={{ isSmall: true }} />
 
-<Story name="Block" args={{ block: true }} />
+<Story name="Block" args={{ isBlock: true }} />
 
 <Story name="Loading state" args={{ isLoading: true }} />
 
-<Story name="Disabled" args={{ disabled: true }} />
+<Story name="Disabled" args={{ isDisabled: true }} />
 
 <Story name="Form ID" args={{ form: "contact_form" }} />
 
 <Story name="ID" args={{ id: "with_id" }} />
 
-<Story name="As reset" args={{ reset: true }} />
+<Story name="As reset" args={{ isReset: true }} />
 
-<Story name="As submit" args={{ submit: true }} />
+<Story name="As submit" args={{ isSubmit: true }} />
 
 <Story name="With custom CSS class" args={{ class: "bg-pink-500" }} />
 

@@ -13,13 +13,13 @@
    * Use full-width
    * @type {boolean}
    */
-  export let block: boolean | undefined = undefined;
+  export let isBlock: boolean | undefined = undefined;
 
   /**
    * Disabled state
    * @type {boolean}
    */
-  export let disabled: boolean | undefined = undefined;
+  export let isDisabled: boolean | undefined = undefined;
 
   /**
    * ID of the form it belongs to
@@ -43,31 +43,31 @@
    * Reset type
    * @type {boolean}
    */
-  export let reset: boolean | undefined = undefined;
+  export let isReset: boolean | undefined = undefined;
 
   /**
    * Submit type
    * @type {boolean}
    */
-  export let submit: boolean | undefined = undefined;
+  export let isSubmit: boolean | undefined = undefined;
 
   /**
    * Secondary color
    * @type {boolean}
    */
-  export let secondary: boolean | undefined = undefined;
+  export let isSecondary: boolean | undefined = undefined;
 
   /**
    * White color
    * @type {boolean}
    */
-  export let white: boolean | undefined = undefined;
+  export let isWhite: boolean | undefined = undefined;
 
   /**
    * Small size
    * @type {boolean}
    */
-  export let sm: boolean | undefined = undefined;
+  export let isSmall: boolean | undefined = undefined;
 
   /**
    * URL it points to ("a" tag)
@@ -81,9 +81,9 @@
    */
   export let target: string | undefined = undefined;
 
-  $: type = submit ? "submit" : reset ? "reset" : "button";
-  $: finalSize = sm ? "sm" : "base";
-  $: finalColor = secondary ? "secondary" : white ? "white" : "primary";
+  $: type = isSubmit ? "submit" : isReset ? "reset" : "button";
+  $: finalSize = isSmall ? "sm" : "base";
+  $: finalColor = isSecondary ? "secondary" : isWhite ? "white" : "primary";
   $: slotBase = CSS.btn.slot.sizes[finalSize] + (isLoading ? " invisible" : "");
   $: finalClass =
     CSS.btn.base +
@@ -91,15 +91,15 @@
     CSS.btn.colors[finalColor] +
     " " +
     CSS.btn.sizes[finalSize] +
-    (disabled ? " " + CSS.btn.disabled : "") +
+    (isDisabled ? " " + CSS.btn.disabled : "") +
     (isLoading ? " " + CSS.btn.loading : "") +
-    (block ? " " + CSS.btn.block : "") +
+    (isBlock ? " " + CSS.btn.block : "") +
     (!!className ? " " + className : "");
 </script>
 
 {#if href}
   <a
-    href={!isLoading && !disabled && href ? href : undefined}
+    href={!isLoading && !isDisabled && href ? href : undefined}
     {id}
     {target}
     rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -111,7 +111,7 @@
     on:focus
   >
     {#if isLoading}
-      <Spinner sm class="absolute" />
+      <Spinner isSmall class="absolute" />
     {/if}
 
     {#if $$slots.left}
@@ -134,7 +134,7 @@
   <button
     {id}
     {type}
-    disabled={disabled || isLoading}
+    disabled={isDisabled || isLoading}
     {form}
     class={finalClass}
     on:click
@@ -144,7 +144,7 @@
     on:focus
   >
     {#if isLoading}
-      <Spinner sm class="absolute" />
+      <Spinner isSmall class="absolute" />
     {/if}
 
     {#if $$slots.left}

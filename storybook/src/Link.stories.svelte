@@ -35,7 +35,7 @@
 
 <Story name="Target _blank" args={{ target: "_blank" }} />
 
-<Story name="Disabled" args={{ disabled: true }} />
+<Story name="Disabled" args={{ isDisabled: true }} />
 
 <Story name="ID" args={{ id: "with_id" }} />
 

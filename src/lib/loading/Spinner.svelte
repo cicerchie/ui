@@ -22,11 +22,11 @@
    * Small size
    * @type {boolean}
    */
-  export let sm: boolean | undefined = undefined;
+  export let isSmall: boolean | undefined = undefined;
 
   export let srOnlyMessage = "Loading...";
 
-  $: size = sm ? "sm" : "base";
+  $: size = isSmall ? "sm" : "base";
 
   $: finalClass =
     CSS.spinner.base +
