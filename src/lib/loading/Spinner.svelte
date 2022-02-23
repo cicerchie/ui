@@ -1,6 +1,4 @@
 <script lang="ts">
-  import objstr from "obj-str";
-
   import CSS from "../common/CSS";
 
   export let aria: Record<string, boolean | "true" | "false"> = {
@@ -30,11 +28,11 @@
 
   $: size = sm ? "sm" : "base";
 
-  $: finalClass = objstr({
-    [CSS.spinner.base]: true,
-    [CSS.spinner.sizes[size]]: true,
-    [className]: !!className,
-  });
+  $: finalClass =
+    CSS.spinner.base +
+    " " +
+    CSS.spinner.sizes[size] +
+    (!!className ? " " + className : "");
 </script>
 
 <div

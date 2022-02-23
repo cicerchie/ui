@@ -1,6 +1,4 @@
 <script lang="ts">
-  import objstr from "obj-str";
-
   import CSS from "../common/CSS";
   import { Spinner } from "../loading";
 
@@ -41,12 +39,11 @@
    */
   export let target: string | undefined = undefined;
 
-  $: finalClass = objstr({
-    [CSS.link.colors.primary]: true,
-    [CSS.link.disabled]: disabled,
-    [CSS.link.loading]: isLoading,
-    [className]: !!className,
-  });
+  $: finalClass =
+    CSS.link.colors.primary +
+    (disabled ? " " + CSS.link.disabled : "") +
+    (isLoading ? " " + CSS.link.loading : "") +
+    (!!className ? " " + className : "");
 </script>
 
 <a

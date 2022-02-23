@@ -1,6 +1,4 @@
 <script lang="ts">
-  import objstr from "obj-str";
-
   import CSS from "../common/CSS";
   import { Spinner } from "../loading";
 
@@ -86,19 +84,17 @@
   $: type = submit ? "submit" : reset ? "reset" : "button";
   $: finalSize = sm ? "sm" : "base";
   $: finalColor = secondary ? "secondary" : white ? "white" : "primary";
-  $: slotBase = objstr({
-    [CSS.btn.slot.sizes[finalSize]]: true,
-    invisible: isLoading,
-  });
-  $: finalClass = objstr({
-    [CSS.btn.base]: true,
-    [CSS.btn.colors[finalColor]]: true,
-    [CSS.btn.sizes[finalSize]]: true,
-    [CSS.btn.disabled]: disabled,
-    [CSS.btn.loading]: isLoading,
-    [CSS.btn.block]: block,
-    [className]: !!className,
-  });
+  $: slotBase = CSS.btn.slot.sizes[finalSize] + (isLoading ? " invisible" : "");
+  $: finalClass =
+    CSS.btn.base +
+    " " +
+    CSS.btn.colors[finalColor] +
+    " " +
+    CSS.btn.sizes[finalSize] +
+    (disabled ? " " + CSS.btn.disabled : "") +
+    (isLoading ? " " + CSS.btn.loading : "") +
+    (block ? " " + CSS.btn.block : "") +
+    (!!className ? " " + className : "");
 </script>
 
 {#if href}
