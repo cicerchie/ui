@@ -34,7 +34,7 @@ Use them at your own risk and check that them do what you want them to do.
 
 1.  `npm install -D @cicerchie/ui`
 
-1.  [TailwindCSS](https://tailwindcss.com) (^v1.8.5) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
+1.  [TailwindCSS](https://tailwindcss.com) (^v3.0.0) is used for styling. For now [it must be added manually in the project](https://tailwindcss.com/docs/installation).<br>
     Use this code in your project's **tailwind.config.js**:
 
     ```js
@@ -65,8 +65,6 @@ Use them at your own risk and check that them do what you want them to do.
 ### Consuming components in a **Svelte 3 project**
 
 Svelte apps can import components source code directly if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader).
-
-_NOTE: From `0.1.x` it only works in a Svelte Typescript project._
 
 ### Consuming components in **any JavaScript project**
 
