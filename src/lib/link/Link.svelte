@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { get_current_component } from "svelte/internal";
   import objstr from "obj-str";
 
   import CSS from "../common/CSS";
@@ -41,8 +40,6 @@
    * @type {string}
    */
   export let target: string | undefined = undefined;
-
-  const cmp = get_current_component();
 
   $: finalClass = objstr({
     [CSS.link.colors.primary]: true,
