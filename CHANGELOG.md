@@ -1,3 +1,10 @@
+## [0.7.5](https://github.com/cicerchie/ui/compare/v0.7.4...v0.7.5) (2022-02-23)
+
+
+### Bug Fixes
+
+* update sub dependencies ([a9e67c7](https://github.com/cicerchie/ui/commit/a9e67c726cef0b2baeaab0baeb85ac3ef09b1665))
+
 ## [0.7.4](https://github.com/cicerchie/ui/compare/v0.7.3...v0.7.4) (2022-02-23)
 
 
