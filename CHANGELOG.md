@@ -1,3 +1,11 @@
+## [0.7.6](https://github.com/cicerchie/ui/compare/v0.7.5...v0.7.6) (2022-02-23)
+
+
+### Bug Fixes
+
+* remove useless code ([c1d03a3](https://github.com/cicerchie/ui/commit/c1d03a3536149a37002ace2e60eeccfd0ea84788))
+* rename "loading" prop to "isLoading" ([eee53ea](https://github.com/cicerchie/ui/commit/eee53ea2dbea71d64db465088d838de9c632ce06))
+
 ## [0.7.5](https://github.com/cicerchie/ui/compare/v0.7.4...v0.7.5) (2022-02-23)
 
 
