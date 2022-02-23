@@ -1,3 +1,11 @@
+## [0.7.7](https://github.com/cicerchie/ui/compare/v0.7.6...v0.7.7) (2022-02-23)
+
+
+### Bug Fixes
+
+* do not use obj-str anymore ([f695223](https://github.com/cicerchie/ui/commit/f6952230bd0fe67332a2ab5b1540f6c2051a17ed))
+* rename all boolean props ([ee4caed](https://github.com/cicerchie/ui/commit/ee4caed725b58a98904457882f3418aac746af41))
+
 ## [0.7.6](https://github.com/cicerchie/ui/compare/v0.7.5...v0.7.6) (2022-02-23)
 
 
