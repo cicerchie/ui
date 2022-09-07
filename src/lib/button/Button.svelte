@@ -81,7 +81,16 @@
    */
   export let target: string | undefined = undefined;
 
-  $: type = isSubmit ? "submit" : isReset ? "reset" : "button";
+  $: type = href
+    ? undefined
+    : isSubmit
+    ? "submit"
+    : isReset
+    ? "reset"
+    : "button";
+
+  $: disabled = href ? undefined : isDisabled || isLoading;
+
   $: finalSize = isSmall ? "sm" : "base";
   $: finalColor = isSecondary ? "secondary" : isWhite ? "white" : "primary";
   $: slotBase = CSS.btn.slot.sizes[finalSize] + (isLoading ? " invisible" : "");
@@ -97,72 +106,40 @@
     (!!className ? " " + className : "");
 </script>
 
-{#if href}
-  <a
-    href={!isLoading && !isDisabled && href ? href : undefined}
-    {id}
-    {target}
-    rel={target === "_blank" ? "noopener noreferrer" : undefined}
-    class={finalClass}
-    on:click
-    on:mouseover
-    on:mouseenter
-    on:mouseleave
-    on:focus
-    {...$$restProps}
-  >
-    {#if isLoading}
-      <Spinner isSmall class="absolute" />
-    {/if}
+<svelte:element
+  this={href ? "a" : "button"}
+  {id}
+  class={finalClass}
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
+  on:focus
+  {...$$restProps}
+  {type}
+  {disabled}
+  {form}
+  href={!isLoading && !isDisabled && href ? href : undefined}
+  {target}
+  rel={target === "_blank" ? "noopener noreferrer" : undefined}
+>
+  {#if isLoading}
+    <Spinner isSmall class="absolute" />
+  {/if}
 
-    {#if $$slots.left}
-      <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
-        <slot name="left" />
-      </div>
-    {/if}
+  {#if $$slots.left}
+    <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
+      <slot name="left" />
+    </div>
+  {/if}
 
-    <span class:invisible={isLoading}>
-      <slot />
-    </span>
+  <span class:invisible={isLoading}>
+    <slot />
+  </span>
 
-    {#if $$slots.right}
-      <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
-        <slot name="right" />
-      </div>
-    {/if}
-  </a>
-{:else}
-  <button
-    {id}
-    {type}
-    disabled={isDisabled || isLoading}
-    {form}
-    class={finalClass}
-    on:click
-    on:mouseover
-    on:mouseenter
-    on:mouseleave
-    on:focus
-    {...$$restProps}
-  >
-    {#if isLoading}
-      <Spinner isSmall class="absolute" />
-    {/if}
-
-    {#if $$slots.left}
-      <div class="{slotBase} {CSS.btn.slot.left.sizes[finalSize]}">
-        <slot name="left" />
-      </div>
-    {/if}
-
-    <span class:invisible={isLoading}>
-      <slot />
-    </span>
-
-    {#if $$slots.right}
-      <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
-        <slot name="right" />
-      </div>
-    {/if}
-  </button>
-{/if}
+  {#if $$slots.right}
+    <div class="{slotBase} {CSS.btn.slot.right.sizes[finalSize]}">
+      <slot name="right" />
+    </div>
+  {/if}
+</svelte:element>
