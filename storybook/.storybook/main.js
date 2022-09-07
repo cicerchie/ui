@@ -10,6 +10,7 @@ module.exports = {
   ],
   core: {
     builder: "webpack5",
+    disableTelemetry: true,
   },
   webpackFinal: async (config) => {
     config.resolve = {
