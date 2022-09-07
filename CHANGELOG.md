@@ -1,3 +1,11 @@
+## [0.7.8](https://github.com/cicerchie/ui/compare/v0.7.7...v0.7.8) (2022-09-07)
+
+
+### Bug Fixes
+
+* update dependencies ([a0de390](https://github.com/cicerchie/ui/commit/a0de390f08420ce0415a3199475cb97a8e62484f))
+* update SvelteKit ([65a5b7f](https://github.com/cicerchie/ui/commit/65a5b7fe6a3ace5378467eae0ef4e21b712fe6e9))
+
 ## [0.7.7](https://github.com/cicerchie/ui/compare/v0.7.6...v0.7.7) (2022-02-23)
 
 
