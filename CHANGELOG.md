@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/cicerchie/ui/compare/v0.8.0...v0.9.0) (2022-09-07)
+
+
+### Features
+
+* **Button:** use svelte:element ([46c16a3](https://github.com/cicerchie/ui/commit/46c16a31850855b917bdb09083764d30e61a2374))
+
 # [0.8.0](https://github.com/cicerchie/ui/compare/v0.7.8...v0.8.0) (2022-09-07)
 
 
