@@ -109,6 +109,7 @@
     on:mouseenter
     on:mouseleave
     on:focus
+    {...$$restProps}
   >
     {#if isLoading}
       <Spinner isSmall class="absolute" />
@@ -142,6 +143,7 @@
     on:mouseenter
     on:mouseleave
     on:focus
+    {...$$restProps}
   >
     {#if isLoading}
       <Spinner isSmall class="absolute" />
