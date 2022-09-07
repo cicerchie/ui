@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/cicerchie/ui/compare/v0.7.8...v0.8.0) (2022-09-07)
+
+
+### Features
+
+* **Button:** assign $$restProps ([3cc9cd7](https://github.com/cicerchie/ui/commit/3cc9cd75d2be33a3fa043bad973ada92bf207341))
+
 ## [0.7.8](https://github.com/cicerchie/ui/compare/v0.7.7...v0.7.8) (2022-09-07)
 
 
