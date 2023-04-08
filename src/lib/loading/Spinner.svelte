@@ -1,46 +1,43 @@
 <script lang="ts">
-  import CSS from "../common/CSS";
+	import CSS from '../common/CSS';
 
-  export let aria: Record<string, boolean | "true" | "false"> = {
-    hidden: "true",
-  };
+	export let aria: Record<string, boolean | 'true' | 'false'> = {
+		hidden: 'true'
+	};
 
-  /**
-   * Custom CSS class
-   * @type {string}
-   */
-  let className: string | undefined = undefined;
-  export { className as class };
+	/**
+	 * Custom CSS class
+	 * @type {string}
+	 */
+	let className: string | undefined = undefined;
+	export { className as class };
 
-  /**
-   * ID
-   * @type {string}
-   */
-  export let id: string | undefined = undefined;
+	/**
+	 * ID
+	 * @type {string}
+	 */
+	export let id: string | undefined = undefined;
 
-  /**
-   * Small size
-   * @type {boolean}
-   */
-  export let isSmall: boolean | undefined = undefined;
+	/**
+	 * Small size
+	 * @type {boolean}
+	 */
+	export let isSmall: boolean | undefined = undefined;
 
-  export let srOnlyMessage = "Loading...";
+	export let srOnlyMessage = 'Loading...';
 
-  $: size = isSmall ? "sm" : "base";
+	$: size = isSmall ? 'sm' : 'base';
 
-  $: finalClass =
-    CSS.spinner.base +
-    " " +
-    CSS.spinner.sizes[size] +
-    (!!className ? " " + className : "");
+	$: finalClass =
+		CSS.spinner.base + ' ' + CSS.spinner.sizes[size] + (!!className ? ' ' + className : '');
 </script>
 
 <div
-  class={finalClass}
-  {id}
-  style="border-right-color: transparent"
-  role="status"
-  aria-hidden={aria.hidden}
+	class={finalClass}
+	{id}
+	style="border-right-color: transparent"
+	role="status"
+	aria-hidden={aria.hidden}
 >
-  {#if srOnlyMessage}<span class="sr-only">{srOnlyMessage}</span>{/if}
+	{#if srOnlyMessage}<span class="sr-only">{srOnlyMessage}</span>{/if}
 </div>

@@ -38,14 +38,14 @@ Use them at your own risk and check that them do what you want them to do.
     Use this code in your project's **tailwind.config.js**:
 
     ```js
-    const resolveConfig = require("tailwindcss/resolveConfig");
-    const cicerchieUITailwindConfig = require("@cicerchie/ui/tailwind.config");
+    const resolveConfig = require('tailwindcss/resolveConfig');
+    const cicerchieUITailwindConfig = require('@cicerchie/ui/tailwind.config');
 
     module.exports = resolveConfig(
-      {
-        // your optional Tailwind config here...
-      },
-      cicerchieUITailwindConfig
+    	{
+    		// your optional Tailwind config here...
+    	},
+    	cicerchieUITailwindConfig
     );
     ```
 
@@ -55,7 +55,7 @@ Use them at your own risk and check that them do what you want them to do.
 
     ```svelte
     <script>
-      import { Button, InputText } from "@cicerchie/ui";
+    	import { Button, InputText } from '@cicerchie/ui';
     </script>
 
     <Button>I'm the Button!</Button>
