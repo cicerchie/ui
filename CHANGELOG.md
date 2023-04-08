@@ -1,3 +1,10 @@
+## [0.9.2](https://github.com/cicerchie/ui/compare/v0.9.1...v0.9.2) (2023-04-08)
+
+
+### Bug Fixes
+
+* remove postinstall from root package.json: now this is the public one ([df9ffe2](https://github.com/cicerchie/ui/commit/df9ffe298433b8cfd5d7d4a837ede9ff0b919e28))
+
 ## [0.9.1](https://github.com/cicerchie/ui/compare/v0.9.0...v0.9.1) (2023-04-08)
 
 
