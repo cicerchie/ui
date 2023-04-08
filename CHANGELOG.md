@@ -1,3 +1,13 @@
+## [0.9.1](https://github.com/cicerchie/ui/compare/v0.9.0...v0.9.1) (2023-04-08)
+
+
+### Bug Fixes
+
+* remove old field main in package.json ([cf3dbfd](https://github.com/cicerchie/ui/commit/cf3dbfd28d6a4e46b0b10f57d70148a8ae8cd318))
+* update storybook dir dependencies ([effc510](https://github.com/cicerchie/ui/commit/effc5104e35048d63f7aaa92981acc10637499ff))
+* update storybook dir dependencies ([d76b644](https://github.com/cicerchie/ui/commit/d76b644ca600eeb59c06ef117a206996f445be1a))
+* update Svelte Kit & other dependencies; remove useless files ([0dabe76](https://github.com/cicerchie/ui/commit/0dabe760ee14d882b17967eb52a64021ba80a556))
+
 # [0.9.0](https://github.com/cicerchie/ui/compare/v0.8.0...v0.9.0) (2022-09-07)
 
 
