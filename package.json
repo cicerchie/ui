@@ -29,7 +29,6 @@
 		"access": "public"
 	},
 	"scripts": {
-		"postinstall": "npm dedupe && cd storybook && npm install && npm dedupe",
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",

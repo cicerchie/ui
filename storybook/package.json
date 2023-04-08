@@ -4,7 +4,8 @@
     "scripts": {
         "build": "npm run generate:tailwind && build-storybook",
         "dev": "npm run generate:tailwind && start-storybook -p 6006",
-        "generate:tailwind": "npx tailwindcss build -c ../tailwind.config.ts -o ./src/style/tailwind.css"
+        "generate:tailwind": "npx tailwindcss build -c ../tailwind.config.ts -o ./src/style/tailwind.css",
+		"postinstall": "npm dedupe"
     },
     "devDependencies": {
         "@storybook/addon-actions": "6.5.16",
