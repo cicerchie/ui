@@ -28,7 +28,6 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"main": "index.js",
 	"scripts": {
 		"postinstall": "npm dedupe && cd storybook && npm install && npm dedupe",
 		"dev": "vite dev",
